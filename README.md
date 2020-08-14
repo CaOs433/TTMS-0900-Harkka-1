@@ -37,8 +37,6 @@ Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käytt�
 
 ## Tietokanta
 
-![tietokanta](readme-images/_.png)
-
 ### Migrations:
 
 #### Käyttäjät
@@ -128,20 +126,9 @@ POST-request jolla kuvan voi siirtää toiseen albumiin
 #### Kuvan poistaminen:
 `/deleteimage/{id}`, jossa id on kuvan id
 
-#### ...:
-`...`
-Sisältää ...
-
-## Koodin toiminta
-### Datan haku:
-Data ...
-
-![...](readme-images/_.png)
-
 ...
 
-![...](readme-images/_.png)
-
+## Koodin toiminta
 ### Kuvien käsittely:
 Kuvien käsittelyyn käytetään kirjastoa: Intervention/Image
 
@@ -159,7 +146,23 @@ Alla olevassa kuvassa koodi jolla tämä toteutetaan:
 Myös albumien kuvakkeet pienennetään, mutta niihin ei lisätä vesileimaa, eikä niiden metadataa tarvita:
 
 ![intervention_album](readme-images/intervention_album.png)
- 
+
+### Roolit
+
+#### AuthServiceProvider.php
+Gates
+
+![intervention_album](readme-images/AuthServiceProvider.png)
+
+#### HasRoleMiddleware.php
+Käyttäjän oikeuksien tarkistus
+
+![intervention_album](readme-images/HasRoleMiddleware.png)
+
+#### User.php
+User
+
+![intervention_album](readme-images/User.png)
  
 ## Itsearvio
 Ehdotan työn arvosanaksi 5. Työ on laaja ja sisältää paljon eri tekniikoita, kuten `PHP`, `Laravel`, `MySQL`, `HTML`, `CSS`...
@@ -174,23 +177,14 @@ Asennus vaatii, että koneellesi on asennettu `composer`.
 
 `composer.json` sisältää projektin vaatimukset.
 
-...
-
-### Manuaalinen asennus:
-Tee uusi `Laravel`-sovellus komennolla `...`
-
-Kopioi kansion `...` sisältö edellä luomasi sovelluksen kansioon `.../...`
-
-Asenna `...` komennolla `...`
-
-Käynnistä kehityspalvelin siirtymällä kansioon `cd app-name` ajamalla komento `...`
-
-...
+Tee uusi Laravel-sovellus ja kopioi/korvaa lähdekoodit näillä.
 
 ### Tietokannan asennus
 Luotuasi uuden Laravel-sovelluksen ja kopioituasi/korvattuasi lähdekoodit, aja komento `php artisan migrate`
 
 Tämä ajaa Migrations komennot ja luo tietokantaan tarvittavat. HUOM! Muista muuttaa tietokantasi nimi ja tunnukset!
+
+Tarkempia ohjeita löytyy täältä: https://laravel.com
 
 ## License
 
