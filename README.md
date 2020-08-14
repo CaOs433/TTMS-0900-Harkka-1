@@ -177,7 +177,36 @@ Asennus vaatii, että koneellesi on asennettu `composer`.
 
 `composer.json` sisältää projektin vaatimukset.
 
-Tee uusi Laravel-sovellus ja kopioi/korvaa lähdekoodit näillä.
+Tee uusi Laravel-sovellus ja kopioi/korvaa lähdekoodit näillä:
+
+`routes/web.php`<br />
+`composer.json`<br />
+`app/Http/Middleware/HasRoleMiddleware.php`<br />
+`app/User.php`<br />
+`app/Album.php`<br />
+`app/Image.php`<br />
+`app/Http/Kernel.php`<br />
+`app/Providers/AuthServiceProvider.php`<br />
+`app/Http/Controllers/AlbumsController.php`<br />
+`app/Http/Controllers/ImagesController.php`<br />
+`app/Providers/AppServiceProvider.php`<br />
+`database/migrations/2020_08_02_125254_create_images_table.php`<br />
+`database/migrations/2020_08_02_123639_create_albums_table.php`<br />
+`database/migrations/2014_10_12_000000_create_users_table.php`<br />
+`database/migrations/2020_07_31_174450_add_role_column_to_users_table.php`<br />
+`resources/views/home.blade.php`<br />
+`app/Http/Controllers/HomeController.php`<br />
+`resources/views/auth/changepassword.blade.php`<br />
+`resources/views/index.blade.php`<br />
+`resources/views/createalbum.blade.php`<br />
+`resources/views/album.blade.php`<br />
+`resources/views/addimage.blade.php`<br />
+`resources/views/addimagefree.blade.php`<br />
+`resources/views/search.blade.php`<br />
+`resources/views/layouts/app.blade.php`<br />
+`public/js/main.js`
+
+HUOM! Jokin tiedosto saattaa puuttua tästä listasta!
 
 ### Tietokannan asennus
 Luotuasi uuden Laravel-sovelluksen ja kopioituasi/korvattuasi lähdekoodit, aja komento `php artisan migrate`
