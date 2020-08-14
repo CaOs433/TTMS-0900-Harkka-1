@@ -31,6 +31,7 @@
                             <a class="card-link" href="{{URL::route('delete_image',array('id'=>$photo->id))}}" onclick="returnconfirm('Are you sure?')"><button type="button" class="btn btn-danger btn-small">Delete Image</button></a><br>
                             Move image to another Album :
                             <form name="movephoto" method="POST" action="{{URL::route('move_image')}}">
+                                {{ csrf_field() }}
                                 <select name="new_album">
                                     @foreach($albums as $others)
                                     <option value="{{$others->id}}">{{$others->name}}</option>

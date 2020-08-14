@@ -57,7 +57,7 @@ class ImagesController extends Controller {
         // Validation parameters for description
         $validator->sometimes(
             'description',
-            'required|string|min:20|max:500|regex:/^[a-zA-Z0-9 ]{0,50}$/',
+            'required|string|min:3|max:500|regex:/^[a-zA-Z0-9 ]{0,50}$/',
             function ( $input ) {
                 return ! empty( $input->description );
             }
@@ -65,7 +65,7 @@ class ImagesController extends Controller {
         // Validation parameters for swords
         $validator->sometimes(
             'swords',
-            'required|string|min:20|max:500|regex:/^[a-zA-Z0-9 ]{0,50}$/',
+            'required|string|min:3|max:500|regex:/^[a-zA-Z0-9 ]{0,50}$/',
             function ( $input ) {
                 return ! empty( $input->swords );
             }
@@ -133,6 +133,7 @@ class ImagesController extends Controller {
 
         // Redirect to album of the new image
         return Redirect::route('show_album', array('id' => Request::get('album_id')));
+        //return Redirect::route('index');
     }
 
     // Delete image
