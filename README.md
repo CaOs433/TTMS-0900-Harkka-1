@@ -8,9 +8,7 @@ Toimiva sovellus löytyy täältä: https://saario.xyz/gallery
 
 Kaikki lähdekoodit (myös automaattisesti luodut) zipattuna: https://saario.xyz/gallery/all.zip
 
-Pelkät lähdekoodit löytyvät kansiosta `source/` (PHP- ja init.sql -tiedostot ovat juurikansiossa)
-
-Videoesittely: ...
+Videoesittely: https://youtu.be/bdJ38PdB-qY
 
 
 ## Kuvaus
@@ -34,6 +32,7 @@ Kuvia klikkaamalla aukeaa kuvaesitys jossa voi selata nuolella albumin kuvia (ta
 <strong>User</strong> - "Asiakas", tarkoituksena oli luoda toivelista sekä ostettujen kuvien lataussivu, mutta näitä ominaisuuksia en ehtinyt tehdä<br />
 
 Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käyttää myös kirjautumatta sivustolle.
+
 
 
 
@@ -72,26 +71,57 @@ Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käytt�
 
 
 ## Rakenne
-### Näkymät
+### Näkymät ja Reitit
 Päänäkymä muodostuu `layouts/app.blade.php` -tiedostosta johon muiden sivujen data lisätään.
 
 ![Blade](readme-images/App.png)
 
 Sivustolla on seuraavat sivut:
 #### Index:
-Sisältää ...
+Etusivu, joka sisältää listan kaikista albumeista.
  
-#### ...:
-Sisältää ...
+#### Album:
+`/album/{id}`, jossa id on albumin id.
+Sisältää albumin kuvat jaettuna max. 32 kuvaan per sivu.
   
-#### ...:
-Sisältää ... 
+#### Kuvahaku:
+`/search?sword=hakusana`
+Sisältää kuvahaun tulokset (jos hakusanaa ei ole syötetty, näytetään kaikki kuvat).
+
+#### Uusi albumi:
+`/createalbum`
+Lomake jolla voi luoda uuden albumin
+ 
+#### Albumin muokkaus:
+`/editalbum/{id}`, jossa id on albumin id
+Sisältää albumin tietojen muokkauslomakkeen (En ehtinyt tehdä loppuun)
+
+#### Albumin poistaminen:
+`/deletealbum/{id}`, jossa id on albumin id
+Albumin poistaminen (vaatii Admin-oikeudet)
+
+#### Kuvan lisäys:
+`/addimage`
+Sisältää kuvan latauslomakkeen
+
+#### Kuvan siirto toiseen albumiin:
+`/moveimage`
+POST-request jolla kuvan voi siirtää toiseen albumiin
+
+#### Kuvan poistaminen:
+`/deleteimage/{id}`, jossa id on kuvan id
 
 #### ...:
-Sisältää ...
- 
+`...`
+Sisältää
+
 #### ...:
-Sisältää ...
+`...`
+Sisältää
+
+#### ...:
+`...`
+Sisältää
 
 ## Koodin toiminta
 ### Datan haku:
@@ -103,8 +133,12 @@ Data ...
 
 ![...](readme-images/_.png)
 
-### ...:
-...
+### Kuvien käsittely:
+Kuvien käsittelyyn käytetään kirjastoa: Intervention/Image
+
+Sen voi asentaa komennolla: `composer require intervention/image`
+
+Tarkemmat asennusohjeet ja dokumentaatio löytyy täältä: http://image.intervention.io/getting_started/installation
 
 ![...](readme-images/_.png)
 

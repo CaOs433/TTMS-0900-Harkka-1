@@ -29,8 +29,9 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::group(['middleware' => 'any_role:admin,manager'], function () {
         // Manager routes
-        Route::get('upload', 'FileController@create');
-        Route::post('upload','FileController@store');
+        // Old:
+        //Route::get('upload', 'FileController@create');
+        //Route::post('upload','FileController@store');
 
         Route::get('/addimage/{id}', array('as' => 'add_image','uses' => 'ImagesController@getForm'));
         Route::get('/addimage', array('as' => 'add_image_free','uses' => 'ImagesController@getFormFree'));
