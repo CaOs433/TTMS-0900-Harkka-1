@@ -4,7 +4,7 @@
 Oskari Saarinen N8243<br />
 TTMS-0900 Web-palvelinohjelmointi - Harjoitustyö<br />
 
-Toimiva sovellus löytyy täältä: https://saario.xyz/gallery
+Toimiva sovellus löytyy täältä: https:// saario.xyz /gallery (Tulossa)
 
 Kaikki lähdekoodit (myös automaattisesti luodut) zipattuna: https://saario.xyz/gallery/all.zip
 
@@ -36,11 +36,6 @@ Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käytt�
 ![valmis](readme-images/valmis.png)
 
 ## Tietokanta
-...
-### MySQL:
-...:
-<strong>...</strong>, joka sisältää ...
-<strong>...</strong>, joka sisältää ...
 
 ![tietokanta](readme-images/_.png)
 
@@ -57,6 +52,7 @@ Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käytt�
 ![migration_add_role](readme-images/migration_add_role.png)
 
 #### Users
+Valmis `users` table:
 
 ![cli_users](readme-images/cli_users.png)
 
@@ -82,23 +78,17 @@ Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käytt�
 
 ![model_image](readme-images/model_image.png)
 
-### PHP:
-<strong>PHP-tiedostoja ...</strong>:
-
-`_.php` - ...
-(...)
-
-`_.php` - ...
-(...)
-
-`_.php` - ...
-
-`_.php` - ...
-
-
 ## Rakenne
 ### Näkymät ja Reitit
 Päänäkymä muodostuu `layouts/app.blade.php` -tiedostosta johon muiden sivujen data lisätään.
+
+Päänäkymä tarvitsee Albumien tiedot, joten sitä varten on `composer` funktio niiden hakemiseen automaattisesti:
+
+`AppServiceProvider.php`:
+
+![AppServiceProvider](readme-images/AppServiceProvider.png)
+
+Sivusto käyttää Bootstrap kirjastoa ulkoasun ja käytettävyyden parantamiseksi.
 
 `web.php` Reitit:
 
@@ -140,15 +130,7 @@ POST-request jolla kuvan voi siirtää toiseen albumiin
 
 #### ...:
 `...`
-Sisältää
-
-#### ...:
-`...`
-Sisältää
-
-#### ...:
-`...`
-Sisältää
+Sisältää ...
 
 ## Koodin toiminta
 ### Datan haku:
@@ -206,39 +188,12 @@ Käynnistä kehityspalvelin siirtymällä kansioon `cd app-name` ajamalla koment
 ...
 
 ### Tietokannan asennus
-...
+Luotuasi uuden Laravel-sovelluksen ja kopioituasi/korvattuasi lähdekoodit, aja komento `php artisan migrate`
 
-Tietokannan luonti tiedosto on `init.sql`
-
-...
-
-...
+Tämä ajaa Migrations komennot ja luo tietokantaan tarvittavat. HUOM! Muista muuttaa tietokantasi nimi ja tunnukset!
 
 ## License
 
 This Laravel app is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
