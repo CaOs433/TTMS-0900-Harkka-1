@@ -140,11 +140,15 @@ Sen voi asentaa komennolla: `composer require intervention/image`
 
 Tarkemmat asennusohjeet ja dokumentaatio löytyy täältä: http://image.intervention.io/getting_started/installation
 
-![...](readme-images/_.png)
+#### ImagesController
+Ladatut kuvat pienennetään ja niihin lisätään vesileima. Kuvista myös tallennetaan EXIF ja IPTC metada jos sellaiset löytyy.
+Alla olevassa kuvassa koodi jolla tämä toteutetaan:
 
-...
+![intervention_image](readme-images/intervention_image.png)
 
-![...](readme-images/_.png)
+#### AlbumsController
+Myös albumien kuvakkeet pienennetään, mutta niihin ei lisätä vesileimaa, eikä niiden metadataa tarvita:
+![intervention_album](readme-images/intervention_album.png)
  
  
 ## Itsearvio
