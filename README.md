@@ -10,7 +10,6 @@ Kaikki lähdekoodit (myös automaattisesti luodut) zipattuna: https://saario.xyz
 
 Videoesittely: https://youtu.be/bdJ38PdB-qY
 
-
 ## Kuvaus
 ### Mitä:
 Laravelin avulla toteutettu kuvagalleria. Sovelluksessa voi annettujen käyttöoikeuksien
@@ -25,7 +24,6 @@ siksi tehdä oman kuvagallerian verkkosivuilleni ja tämä kurssi antoi siihen t
 Etusivulla näkyy kaikki albumit, joita klikkaamalla aukeaa sivu jolla näkyy kaikki albumin kuvat.
 Kuvia klikkaamalla aukeaa kuvaesitys jossa voi selata nuolella albumin kuvia (tai kuvahaun tuloksia).
 
-
 <strong>Sovelluksessa on 3 käyttäjä roolia:</strong><br />
 <strong>Admin</strong> - Kaikki oikeudet<br />
 <strong>Manager</strong> - Voi ladata uusia kuvia galleriaan<br />
@@ -33,13 +31,9 @@ Kuvia klikkaamalla aukeaa kuvaesitys jossa voi selata nuolella albumin kuvia (ta
 
 Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käyttää myös kirjautumatta sivustolle.
 
-
-
-
 <strong>Kuva valmiista sivusta</strong>:
 
-![valmis](readme-images/_.png)
-
+![valmis](readme-images/valmis.png)
 
 ## Tietokanta
 ...
@@ -61,6 +55,10 @@ Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käytt�
 `add_role`:
 
 ![migration_add_role](readme-images/migration_add_role.png)
+
+#### Users
+
+![cli_users](readme-images/cli_users.png)
 
 #### Albumit
 `albums`:
