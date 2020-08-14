@@ -122,10 +122,9 @@ En ehtinyt kaikkia haluamiani omianisuuksia tehdä, mutta kaikki tärkeimmät ky
 
 
 ## Asennus
-Manuaalinen asennus vaatii, että koneellesi on asennettu `npm`.
+Manuaalinen asennus vaatii, että koneellesi on asennettu `...`.
 
-Sivu on toimintavalmis kopioimalla `build.zip`-arkiston sisältö palvelimelle (HUOM. Sivu on rakennettu olettaen sen
-sijaitsevan kansiossa `repo/app/`).
+...
 
 ### Manuaalinen asennus:
 Tee uusi `Laravel`-sovellus komennolla `...`
