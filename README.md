@@ -81,31 +81,31 @@ Sivustolla on seuraavat sivut:
 Etusivu, joka sisältää listan kaikista albumeista.
  
 #### Album:
-`/album/{id}`, jossa id on albumin id.
+`/album/{id}`, jossa id on albumin id.<br />
 Sisältää albumin kuvat jaettuna max. 32 kuvaan per sivu.
   
 #### Kuvahaku:
-`/search?sword=hakusana`
+`/search?sword=hakusana`<br />
 Sisältää kuvahaun tulokset (jos hakusanaa ei ole syötetty, näytetään kaikki kuvat).
 
 #### Uusi albumi:
-`/createalbum`
+`/createalbum`<br />
 Lomake jolla voi luoda uuden albumin
  
 #### Albumin muokkaus:
-`/editalbum/{id}`, jossa id on albumin id
+`/editalbum/{id}`, jossa id on albumin id<br />
 Sisältää albumin tietojen muokkauslomakkeen (En ehtinyt tehdä loppuun)
 
 #### Albumin poistaminen:
-`/deletealbum/{id}`, jossa id on albumin id
+`/deletealbum/{id}`, jossa id on albumin id<br />
 Albumin poistaminen (vaatii Admin-oikeudet)
 
 #### Kuvan lisäys:
-`/addimage`
+`/addimage`<br />
 Sisältää kuvan latauslomakkeen
 
 #### Kuvan siirto toiseen albumiin:
-`/moveimage`
+`/moveimage`<br />
 POST-request jolla kuvan voi siirtää toiseen albumiin
 
 #### Kuvan poistaminen:
