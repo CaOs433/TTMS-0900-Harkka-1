@@ -148,6 +148,7 @@ Alla olevassa kuvassa koodi jolla tämä toteutetaan:
 
 #### AlbumsController
 Myös albumien kuvakkeet pienennetään, mutta niihin ei lisätä vesileimaa, eikä niiden metadataa tarvita:
+
 ![intervention_album](readme-images/intervention_album.png)
  
  
@@ -160,7 +161,9 @@ En ehtinyt kaikkia haluamiani omianisuuksia tehdä, mutta kaikki tärkeimmät ky
 
 
 ## Asennus
-Manuaalinen asennus vaatii, että koneellesi on asennettu `...`.
+Asennus vaatii, että koneellesi on asennettu `composer`.
+
+`composer.json` sisältää projektin vaatimukset.
 
 ...
 
@@ -184,8 +187,9 @@ Tietokannan luonti tiedosto on `init.sql`
 
 ...
 
+## License
 
-
+This Laravel app is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
 
@@ -211,6 +215,3 @@ Tietokannan luonti tiedosto on `init.sql`
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
