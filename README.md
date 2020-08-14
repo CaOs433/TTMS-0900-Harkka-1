@@ -74,9 +74,10 @@ Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käytt�
 ### Näkymät ja Reitit
 Päänäkymä muodostuu `layouts/app.blade.php` -tiedostosta johon muiden sivujen data lisätään.
 
-![Blade](readme-images/App.png)
+`web.php` Reitit:
 
-Sivustolla on seuraavat sivut:
+![Routes](readme-images/routes.png)
+
 #### Index:
 Etusivu, joka sisältää listan kaikista albumeista.
  
