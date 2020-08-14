@@ -51,10 +51,38 @@ Kuvia voi selata ja kuvakohtaisiin hakusanoihin perustuvaa kuvahakua voi käytt�
 ![tietokanta](readme-images/_.png)
 
 ### Migrations:
-...
+
+#### Käyttäjät
+`users`:
+
+![migration_users](readme-images/migration_users.png)
+
+#### Roolit
+`add_role`:
+
+![migration_add_role](readme-images/migration_add_role.png)
+
+#### Albumit
+`albums`:
+
+![migration_albums](readme-images/migration_albums.png)
+
+#### Kuvat
+`images`:
+
+![migration_images](readme-images/migration_images.png)
 
 ### Data Models:
-...
+
+#### Album
+`Album`:
+
+![model_album](readme-images/model_album.png)
+
+#### Kuva
+`Image`:
+
+![model_image](readme-images/model_image.png)
 
 ### PHP:
 <strong>PHP-tiedostoja ...</strong>:
