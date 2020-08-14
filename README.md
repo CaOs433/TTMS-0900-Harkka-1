@@ -167,7 +167,7 @@ User
 ## Itsearvio
 Ehdotan työn arvosanaksi 5. Työ on laaja ja sisältää paljon eri tekniikoita, kuten `PHP`, `Laravel`, `MySQL`, `HTML`, `CSS`...
 Työ sisältää paljon koodia. Käytin työhön aikaa kahden viikon aikana arviolta ~40-50h. Käytin päivästä riippuen ~2-10h/päivä.
-En ehtinyt kaikkia haluamiani omianisuuksia tehdä, mutta kaikki tärkeimmät kyllä. 
+En ehtinyt kaikkia haluamiani ominaisuuksia tehdä, mutta kaikki tärkeimmät kyllä. 
 
 ...
 
